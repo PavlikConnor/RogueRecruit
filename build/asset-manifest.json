@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ea073dc8.css",
-    "main.js": "/static/js/main.1a0e0477.js",
+    "main.js": "/static/js/main.3e8460fe.js",
     "static/media/materialdesignicons-webfont.svg?v=2.4.85": "/static/media/materialdesignicons-webfont.6285372902a5d4634762.svg",
     "static/media/About_2.png": "/static/media/About_2.3b03c2032510e637d1ae.png",
     "static/media/app_1.png": "/static/media/app_1.6f87cf59acf95a0a2828.png",
@@ -60,6 +60,7 @@
     "static/media/Profile2.jpg": "/static/media/Profile2.fe08d1c8c22f230cf708.jpg",
     "static/media/logo.png": "/static/media/logo.9e42f6829ee5efb6f5ce.png",
     "static/media/vectorbg3.jpg": "/static/media/vectorbg3.6963eaa15fed1be20f43.jpg",
+    "static/media/DefaultProfilePicture.png": "/static/media/DefaultProfilePicture.c3f945216dc12c9498dc.png",
     "static/media/vectorbg2.jpg": "/static/media/vectorbg2.90fa6d6d90c57dbdf293.jpg",
     "static/media/THICCCBOI-Medium.woff": "/static/media/THICCCBOI-Medium.7a1320309b0ff94b3c01.woff",
     "static/media/THICCCBOI-Regular.woff": "/static/media/THICCCBOI-Regular.55371676fbe5e4e49b9e.woff",
@@ -102,10 +103,10 @@
     "static/media/blob2.svg": "/static/media/blob2.a00275dcb4dcef0ece52.svg",
     "static/media/blob.svg": "/static/media/blob.246390e8e73531c9e22b.svg",
     "main.ea073dc8.css.map": "/static/css/main.ea073dc8.css.map",
-    "main.1a0e0477.js.map": "/static/js/main.1a0e0477.js.map"
+    "main.3e8460fe.js.map": "/static/js/main.3e8460fe.js.map"
   },
   "entrypoints": [
     "static/css/main.ea073dc8.css",
-    "static/js/main.1a0e0477.js"
+    "static/js/main.3e8460fe.js"
   ]
 }
