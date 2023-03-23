@@ -32,7 +32,6 @@
     "remove-style": "^1.0.0",
     "sass": "^1.58.0",
     "sass-loader": "^13.2.0",
-    "styled-components": "^5.3.9",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4",
     "yup": "^0.32.11"

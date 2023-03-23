@@ -12,9 +12,7 @@ useEffect(() => {
   return (
     <>
     <Animated animationIn="slideInUp" animationOut="fadeOut" isVisible={true}>
-    <section className="wrapper bg-soft-primary">
-    
-      
+    <section className="wrapper bg-soft-primary">    
       <div className="container pt-17 pb-19 pt-md-20 pb-md-20 text-center">
         <div className="row">
           <div className="col-md-10 col-xl-8 mx-auto">
@@ -32,7 +30,7 @@ useEffect(() => {
       </div>
     </section>
 
-    <section className="wrapper bg-light">
+    <section className="wrapper bg-white">
       <div className="container pb-14 pb-md-16">
         <div className="row">
           <div className="col-lg-10 mx-auto">

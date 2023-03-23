@@ -1,3 +1,7 @@
+body #root
+{
+  color:#60697b;
+}
 .App {
   text-align: center;
 }
@@ -28,7 +32,7 @@
   border-color: #9A0008;
   color: #fff;
 }
-.wrapper .text-primary,.wrapper .text-grape,footer .text-primary.icon,.text-primary{
+.wrapper .text-primary,.wrapper .text-grape,footer .text-primary.icon,.text-primary,.stat-modal .text-primary{
   color:#9A0008 !important;
 }
 .footer_email{
@@ -475,7 +479,7 @@ border-radius: 4px;
   left:38%;
 }
 .confirm-box__content {
-	padding: 2rem 2rem;
+  padding: 2rem 2rem;
   width:100%;
 }
 
@@ -573,6 +577,11 @@ background:#9A0008 !important;
   color:#6e6e6e !important;
 }
 
+.pagination .page-item .page-link{
+  font-size: 15px !important;
+}
+
+
 .navbar{
   z-index: 2 !important;
 }
@@ -581,10 +590,241 @@ background:#9A0008 !important;
   z-index: 999999 !important;
 }
 
-/*======= Responsive Css =======*/
+.hover-color:hover{
+  color:#fff !important;
+}
+.breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+  color: #9A0008 !important;
+}
 
+.detail_sec{
+  z-index:1;
+  position: relative;
+}
+
+.media_header button:focus{
+  box-shadow: none;
+  border: 0;
+color:#343f52 !important;
+}
+h2.media_header{
+  border:0;
+}
+.media_header button{
+  color:#343f52 !important;
+  font-weight: bold;
+  border: 0;
+  background: #fff !important;
+  padding-left: 0 !important;
+  
+}
+
+
+.accordion-button::after{
+  width: 1rem;
+    height: 1rem;
+    background-size: 1rem;
+}
+
+.accordion-button:not(.collapsed)::after{
+  filter: grayscale(100%);
+}
+
+.accordion .accordion-collapse{
+  border:0;
+}
+
+.set_details{
+  position: relative;
+  z-index: 1;
+}
+
+.search-header.card-header{
+  display: flex;
+}
+
+.stat-modal{
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%,-50%) !important;
+}
+.right_accordion button {
+  border: 0;
+  font-size: 1.15rem;
+  font-weight: 700;
+color: #343f52 !important;
+letter-spacing: -.01rem;
+padding-left: 0;
+}
+
+.media_header.right_accordion button:focus{
+  color:#343f52 !important;
+}
+
+.card_width{
+  min-width: 200px !important;
+}
+
+.spinner-border {
+  --bs-spinner-width: 1rem !important;
+  --bs-spinner-height: 1rem !important;}
+
+.accordion-button::after{
+  transform: rotate(-90deg);
+}
+
+
+.accordion-button:not(.collapsed)::after{
+  transform: unset !important;
+}
+
+.btn-close::before{
+  display:none !important;
+}
+.btn-close:hover,.btn-close{
+  color:#9A0008 !important ;
+  background: transparent url("data:image/svg+xml,%3csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 16 16%27 fill=%27%23000%27%3e%3cpath d=%27M.293.293a1 1 0 011.414 0L8 6.586 14.293.293a1 1 0 111.414 1.414L9.414 8l6.293 6.293a1 1 0 01-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 01-1.414-1.414L6.586 8 .293 1.707a1 1 0 010-1.414z%27/%3e%3c/svg%3e") center/1em auto no-repeat !important;
+}
+
+
+.media_accordion .border-none.accordion-body{
+  height: 256px;
+overflow-y: auto;
+}
+
+
+.push{
+  height: 400px;
+}
+#header.header .header-content{
+  padding-left: 8rem;
+}
+
+.home-list:before{
+  display: none !important;
+}
+
+/*footer{
+  position: fixed;
+  bottom:0;
+  width: 100%;
+}*/
+
+
+
+/*======= Website style css start ======*/
+:root {
+  font-size: var(--bs-root-font-size) !important;
+}
+a{
+  text-decoration: none !important;
+}
+.search_btn{
+max-height: calc(3.5rem + 2px) !important;
+}
+.media_accordion .border-none.accordion-body .card{
+  height: auto !important;
+}
+.nav-tabs .nav-link.active{
+  background: #fff !important;
+}
+.btn-lg.btn{
+  font-size: inherit !important;
+}
+#analyze.search_input{
+  height: 3rem;
+}
+/*#analyze ~ label{
+  line-height:2.5rem !important;
+}
+*/
+.form-floating > .form-control:focus{
+  z-index:unset !important;
+}
+.form-floating > .form-control{
+  height: calc(2.5rem + 3px) !important;
+}
+.about_bg{
+  padding-right: 1.25rem !important;
+padding-left: 1.25rem !important;
+}
+.icon-list.bullet-bg.bullet-soft-primary:before{
+  display: none;
+}
+
+.footer.out-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top:20px;
+}
+
+.bg-light-red{
+  background: #faf4f4 !important;
+}
+.nav-link.user_icon{
+  width:60px;
+}
+.nav-link.user_icon img{
+  width: 100%;
+}
+.fade.modal.show,.modal-lg.stat-modal.modal.show{
+  z-index:999999;
+}
+
+.accordion-button{
+  width: 100%;
+justify-content: space-between;
+display: flex;
+}
+.accordion-button.collapsed i{
+  transform: unset;
+  transition: all 0.5s ease-in-out;
+}
+.accordion-button i{
+  transform: rotate(90deg);
+   transition: all 0.5s ease-in-out;
+}
+
+
+
+
+/*======= Responsive Css =======*/
+  @media (min-width: 1400px){
+.wrapper .container,.wrapper .container-lg,.wrapper .container-md,.wrapper .container-sm,.wrapper .container-xl,.wrapper .container-xxl,
+#root footer .container,#root footer .container-lg,#root footer .container-md,#root footer .container-sm,#root footer .container-xl,#root footer .container-xxl,
+
+.bg-white .container {
+  max-width: 1320px;
+}
+}
+
+@media only screen and (max-width: 48rem){
+
+
+ .nav-header .hamburger.is-active {
+  left: -40px !important;
+  top: -8px !important;
+}
+.hamburger.is-active .line:nth-child(1) {
+  transform: translateY(8px) translateX(8px) rotate(36deg) !important;
+  background: #9A0008 !important;
+}
+.hamburger.is-active .line:nth-child(2) {
+  display: none;
+}
+.hamburger.is-active .line:nth-child(3) {
+  transform: translateY(-2px) translateX(8px) rotate(-36deg) !important;
+  background:  #9A0008 !important;
+}
+
+}
 @media only screen and (max-width: 1023px){
 
+#header {
+  padding-left: 6.5rem;
+}
 #deznave li{
 padding: 0;
 }
@@ -694,13 +934,23 @@ font-size: 1rem !important;
   max-width: 80px !important;
 }
 .nav-control {
-  right: -1.8rem !important;
+  right: 10px !important;
 }
-.btn.btn-primary.mh-100.search_btn{
-    padding: 5px 8px;
-  font-size: 12px;
+#nav-header1 a {
+  padding: 0.75rem 0rem;
+}
+.form-floating > label {
+  top:4px !important;
+  font-size: .65rem !important;
+}
+.search-header.card-header{
+  display:block;
+}
+.search-header.card-header h4{
+  margin-bottom:10px;
 
 }
+
 #analyze .form-floating > label {
   color: #959ca9;
   font-size: 0.7rem;
@@ -709,12 +959,21 @@ font-size: 1rem !important;
 #analyze .form-floating{
   margin-left:10px;
 }
+#header {
+   padding-left: 0;
+}
+
 }
 
 @media (max-width:374px){
   .social a {
   margin: 0 0 0 .2rem !important;}
-  
+
+  .btn.btn-primary.mh-100.search_btn{
+    padding: 5px 8px;
+  font-size: 12px;
+
+}
 
 
 }

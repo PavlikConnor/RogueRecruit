@@ -50,8 +50,10 @@ const Login = () => {
         console.log(JSON.stringify(response))
         localStorage.setItem("token", response.data.result.apiToken)
         setIsLoading(false);
+         localStorage.setItem("userEmail",email)
         navigate("/admin")
-        window.location.reload()
+        // alert(email)
+        // window.location.reload()
       });
     }catch (error) {
       setIsLoading(false);
@@ -77,9 +79,9 @@ const Login = () => {
                 <div className="card-body p-11 text-center">
                   <img src={Logo} alt="" className="mb-10 img-fluid w-50" />
                   <p className="mb-4 text-body">Sign In to secure admin portal</p>
-                  <form className="text-start">
+                  <form className="text-start" >
                     <div className="form-floating mb-4">
-                      <input type="email" value={email} className="form-control" placeholder="Email" id="loginEmail"
+                      <input type="email" value={email} className="form-control" placeholder="Email" id="loginEmail" 
                         onChange={(e) => setEmail(e.target.value)} />
 
                       <label htmlFor="loginEmail">Email</label>
@@ -91,7 +93,7 @@ const Login = () => {
                     */}<label htmlFor="loginPassword">Password</label>
                     </div>
                     <button type="submit" className="btn btn-primary rounded btn-login w-100 mt-6 mb-2"
-                      onClick={loginHandle}>Sign In</button>
+                      onClick={loginHandle}   >Sign In</button>
                   </form>
                 </div>
               </div>

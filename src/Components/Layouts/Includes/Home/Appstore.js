@@ -47,7 +47,7 @@ const Appstore = () => {
               </div>
             </div>
             <div className=" justify-content-center justify-content-lg-start mt-8 btn-wrapper" data-group="download">
-              <div className="d-inline-flex me-2 mb-2"><a href="https://www.apple.com/" target="_blank" className="btn btn-lg btn-grape rounded min_width fs-18"><i className="uil uil-apple me-1"></i > App Store</a></div>
+              <div className="d-inline-flex me-2 mb-2"><a href="https://www.apple.com/" target="_blank" className="btn btn-lg btn-grape rounded min_width fs-15 text-white"><i className="uil uil-apple me-1"></i > App Store</a></div>
               <div className="d-inline-flex mb-2"><a href="https://play.google.com/store/games" target="_blank" className="btn btn-lg btn-outline-grape rounded fs-18"><i className="uil uil-google-play me-1"></i> Google Play</a></div>
             </div>
           </div>
@@ -64,7 +64,7 @@ const Appstore = () => {
           </div>
         </div>
         <div className="row gx-lg-8 gx-xl-12 gy-8 mb-10 mb-md-10 pb-lg-10"  data-group="services">
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg1} className=" icon-svg icon-svg-sm text-aqua me-4" alt="" />
@@ -75,7 +75,7 @@ const Appstore = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg2} className=" icon-svg icon-svg-sm text-yellow me-4" alt="" />
@@ -86,7 +86,7 @@ const Appstore = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg3} className=" icon-svg icon-svg-sm text-red me-4" alt="" />
@@ -97,7 +97,7 @@ const Appstore = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg4} className=" icon-svg icon-svg-sm text-pink me-4" alt="" />
@@ -109,7 +109,7 @@ const Appstore = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg5} className=" icon-svg icon-svg-sm text-green me-4" alt="" />
@@ -121,7 +121,7 @@ const Appstore = () => {
               </div>
             </div>
           </div>
-          <div className="col-md-6 col-lg-4">
+          <div className="col-md-6 col-lg-4 mb-4">
             <div className="d-flex flex-row">
               <div>
                 <img src={Targetimg6} className=" icon-svg icon-svg-sm text-purple me-4" alt="" />
@@ -134,7 +134,7 @@ const Appstore = () => {
           </div>
         </div>
       </div>
-       <figure><img src={Cloudsimg} alt=""/></figure>
+       <figure className="mb-0"><img src={Cloudsimg} alt=""/></figure>
     </section>
     </>
   );

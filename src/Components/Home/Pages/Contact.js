@@ -69,7 +69,7 @@ const Show=(e)=>{
         </div>
       </div>
     </section>
-    <section className="wrapper bg-light angled upper-end">
+    <section className="wrapper bg-white angled upper-end">
       <div className="container pb-11">
         <div className="row mb-14 mb-md-16">
           <div className="col-xl-10 mx-auto mt-n19">

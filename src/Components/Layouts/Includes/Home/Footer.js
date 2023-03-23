@@ -3,6 +3,7 @@ import Logo from "../../../../assets/Web_assets/img/logo.png"
 const Footer = () => {
 return (
 <>
+
 <footer className="bg-white ">
    <div className="container pt-8 pt-md-10 pb-7">
       <div className="row gx-lg-0 gy-6">
@@ -22,7 +23,7 @@ return (
                   </div>
                   <div>
                      <h5 className="mb-1">Email</h5>
-                     <p className="mb-0"><a href="mailto:RogueSupport@roguerecruit.com" className="text-primary"><span className="footer_email text-break" data-cfemail="c7b4a6a9a3a5a8bf87a2aaa6aeabe9a4a8aa">RogueSupport@roguerecruit.com</span></a></p>
+                     <p className="mb-0"><a href="mailto:RogueSupport@roguerecruit.com" className="text-primary text-decoration-none"><span className="footer_email text-break" data-cfemail="c7b4a6a9a3a5a8bf87a2aaa6aeabe9a4a8aa">RogueSupport@roguerecruit.com</span></a></p>
                   </div>
                </div>
             </div>
@@ -45,9 +46,9 @@ return (
       <div className="d-md-flex align-items-center justify-content-between">
          <p className="mb-2 mb-lg-0">roguerecruit© 2023. All rights reserved.</p>
          <nav className="nav social social-muted mb-0 text-md-end">
-            <a href="https://twitter.com/" target="_blank"><i className="uil uil-twitter"></i></a>
-            <a href="https://www.facebook.com/" target="_blank"><i className="uil uil-facebook-f"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"><i className="uil uil-instagram"></i></a>
+            <a href="https://twitter.com/" target="_blank" className="text-decoration-none"><i className="uil uil-twitter"></i></a>
+            <a href="https://www.facebook.com/" target="_blank" className="text-decoration-none"><i className="uil uil-facebook-f"></i></a>
+            <a href="https://www.instagram.com/" target="_blank" className="text-decoration-none"><i className="uil uil-instagram"></i></a>
          </nav>
       </div>
    </div>
