@@ -45,12 +45,14 @@ const ProfileDetail = () => {
 
    const [StatsEmpty, setStatsEmpty] = useState(true)
    const [teamsEmpty, setTeamsEmpty] = useState(true)
+   const [evntsEmpty, setEventsEmpty] = useState(true)
+
 
 
 
    useEffect(() => {
 
-      sportSelected="VB"
+     
       try {
          axios({
             method: 'GET',
@@ -67,8 +69,13 @@ const ProfileDetail = () => {
             setAlldata(response.data.result);
              // console.log("Media detail" ,response.data.mediaLinks)
             sports = response.data.result.sports
+          
+
             if (sports.length != 0) {
                setSeasons(sports[0].seasons);
+               sportSelected=sports[0].sportCode
+              
+
                // console.log("responbse for all data" ,sports)
             }
             setIsLoading(false)
@@ -92,8 +99,10 @@ const ProfileDetail = () => {
   
 
    const getSeason = (code) => {
+ 
       events=[]
       sportSelected = code
+      setTeamsEmpty(true)
      
       // setMediaLinks([])
       setTeams([])
@@ -106,8 +115,9 @@ const ProfileDetail = () => {
    }
 
    const getTeams = (seasonYear) => {
+    
        seasonSelected=seasonYear
-
+       setEventsEmpty(true)
       events=[]
       // setMediaLinks([])
       setStats([])
@@ -125,6 +135,7 @@ const ProfileDetail = () => {
       // setStats(filteredResponse[0].stats)
       getSeasonDetails(seasonID)
       setStatsEmpty(false)
+      setEventsEmpty(false)
       // console.log("filtered teams are",filteredResponse[0].stats)
    }
 
@@ -492,10 +503,10 @@ const getSeasonDetails=(id)=>{
    </Modal.Body>
 </Modal>
          <div className="right_sec">
-            <h2 className="h1 mb-3">Sport Detail</h2>
+            <h2 className="h1 mb-3 fs-24">Sport Detail</h2>
             {sports.length == 0 ?
                <div>
-                  <h2 className="text-center py-10"> No Data Available</h2>
+                  <h2 className="text-center fs-18 fw-normal py-10"> No data available</h2>
                </div>
                :
                <div>
@@ -511,7 +522,7 @@ const getSeasonDetails=(id)=>{
                   <div className="tab-content mt-4 mt-md-8 " >
                      <ul className="nav nav-tabs-2 justify-space-between mb-8">
                         {seasons.map((item, index) =>
-                           <li className="nav-item px-1" key={index}>
+                           <li className="nav-item px-1 mb-2" key={index}>
                               <a data-bs-toggle="tab" className="d-inline-block w-100 py-2 px-3 rounded back-red text-white text-center fw-bold  border line-height"
                                  href="#" onClick={() =>
                                     getTeams(item.seasonYear)}>
@@ -526,11 +537,11 @@ const getSeasonDetails=(id)=>{
                         <div>
                            {teams.length == 0 ?
                               <div>
-                                 {/*// <h2 className="text-center py-10"> No Teams Available</h2>
-                              */}</div>
+                                  <h2 className="text-center fs-18 mt-4 fw-normal py-10"> No teams available</h2>
+                              </div>
                               :
                               <div>
-                                 <h3 className="h3 mb-3"><span className="sub-text">Teams</span> </h3>
+                                 <h3 className="h3 mb-3"><span className="sub-text fs-22">Teams</span> </h3>
                                  <ul className="nav nav-tabs-3 nav-tabs-basic justify-space-between mb-4">
                                     {teams.map((item, index) =>
                                        <li className="nav-item px-1 mb-4" key={index}>
@@ -577,7 +588,8 @@ const getSeasonDetails=(id)=>{
 
 
                         } */}
-
+{evntsEmpty == true ? null:
+<div>
 {EventsLoader ?<div className='text-center'>
                   <div class="spinner-border" role="status">
                      <span class="visually-hidden">Loading ...</span>
@@ -586,13 +598,15 @@ const getSeasonDetails=(id)=>{
            :
            events.length ==0  ?
                 
-               null
+               <div>
+                      <h2 className="text-center fs-18 mt-4 fw-normal py-10"> No events available</h2>
+                              </div>
       
                    :
-                    <Accordion >
+                    <Accordion defaultActiveKey='0'>
                        <Accordion.Item eventKey="0">
                          <Accordion.Header className="text-primary bg-transparent media_header p-0 right_accordion">
-                         <span>Events</span>
+                         <span className='fs-22'>Events</span>
                            <i className="uil uil-angle-right fs-26"></i>
                          </Accordion.Header>
                          <Accordion.Body className="p-0 border-none">
@@ -603,10 +617,10 @@ const getSeasonDetails=(id)=>{
                                  <a onClick={()=>getData(item.eventID,item.eventName)}>
                                  <div className='card lift mb-4'>
                                     <div className="card-body py-2 px-5">                                             <div className="row">
-                                          <div className='col-md-8'>
-                                                <b>{item.eventName==null ? "Event" :item.eventName}</b>
+                                          <div className='col-8 col-md-8'>
+                                                <b className='fs-16'>{item.eventName==null ? "Event" :item.eventName}</b>
                                           </div>
-                                          <div className='col-md-4 text-end'>
+                                          <div className='col-4 col-md-4 text-end'>
                                              <span className=" text-center text-body"><i className="uil uil-angle-right-b"></i></span>
                                     </div>                              
                                              </div>                    
@@ -626,8 +640,9 @@ const getSeasonDetails=(id)=>{
 
 
                         }
+                        </div>
 
-
+                     }
 
               
 

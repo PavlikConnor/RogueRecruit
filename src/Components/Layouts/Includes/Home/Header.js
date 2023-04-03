@@ -50,7 +50,7 @@ function myFunction() {
                 <NavLink to='/'>
                   <img src={Logo}  alt="logo_img"  className="img-fluid logo_img"/>
                 </NavLink></h3>
-                <button type="button" onClick={Close} className="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                <button type="button" onClick={Close} className="btn-close btn-close-white nav-close-btn" data-bs-dismiss="offcanvas" aria-label="Close"></button>
               </div>
               <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul className="navbar-nav">

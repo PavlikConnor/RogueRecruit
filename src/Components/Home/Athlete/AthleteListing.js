@@ -263,7 +263,7 @@ return (
 </section>
 
 { Isloading ? <Loader /> :
-<section className="wrapper set_details bg-white" >
+<section className="wrapper set_details" >
    <div className="container p-10  pb-md-10  mt-n20 bg-white rounded" >
       <div className="row mb-6">
          <div className="col-lg-4 mx-auto">
@@ -271,16 +271,16 @@ return (
                <div className="form-floating input-group">
                   <input type="text" className="form-control border" placeholder="Search Athletes" id="analyze" value={searchResult} onChange={(e) => setSearchresult(e.target.value)}
                   {...formik.getFieldProps("Search")} />
-                  <label htmlFor="analyze">Search Athletes</label>
-                  <button className="btn btn-primary hover-color search_btn" type="button" onClick={formik.handleSubmit}>Search</button>
+                  <label htmlFor="analyze" className="fs-15">Search Athletes</label>
+                  <button className="btn btn-primary hover-color search_btn fs-15" type="button" onClick={formik.handleSubmit}>Search</button>
                </div>
                {formik.touched.Search && formik.errors.Search ? 
-               <p className='red'>{formik.errors.Search}</p>
+               <p className='red fs-15'>{formik.errors.Search}</p>
                : null}
             </form>
          </div>
       </div>
-      <div className="table-responsive">
+      <div>
          <div className="job-list mb-10">
             <h3 className="mb-4">All Athletes </h3>
              
@@ -301,24 +301,24 @@ return (
             {alldata.map((content, id) => {
             return (
             <NavLink to={{ pathname: "/profile" }} state={{ Content: content }}
-            className="card mb-4 lift" key={id}>
+            className="card shadow-none background-color mb-4 lift" key={id}>
             <div className="card-body px-5 py-3">
                <span className="row justify-content-between align-items-center">
-                  <span className="col-md-3 col-lg-3 mb-2 mb-md-0 d-flex align-items-center text-body">
+                  <span className="col-md-3 col-lg-3 pe-0 mb-2 mb-md-0 d-flex align-items-center text-body fs-15">
                      <img className="avatar d-inline-block w-10 me-2" alt="" src={
                                 content.athleteNavigation.profilePicture == null 
                                   ?  
-                                   (content.gender=="M" ? `${AthleteMale}` :`${AthleteFemale}`
+                                   (content.gender=="M" || content.gender =="O"  ? `${AthleteMale}` :`${AthleteFemale}`
                                    )
 
                                   :
                                   content.athleteNavigation.profilePicture.uri
                                } />
-                     <div className="row">
+                     <div className="name-row">
                         <div>
                            <b>{content.firstName}</b> <b>{content.lastName}</b>
                         </div>
-                        <div><span>{content.gender=="F"?"Female":content.gender=="M"?"Male":"Other"}</span>,
+                        <div className="fs-14"><span>{content.gender=="F"?"Female":content.gender=="M"?"Male":"Other"}</span>,
                         <span> {heightinfeet(content.heightInches)}</span>
                            <span> {content.weightPounds} lbs</span>
                         </div>
@@ -347,27 +347,27 @@ return (
                      // 
                   </span>
                   */}
-                  <span className="col-9 col-md-6 col-lg-4 text-body align-items-center">
+                  <span className="col-9  col-sm-6 col-md-3 col-lg-4 text-body align-items-center">
                      <div className="row">
-                        <div className="col-md-6">
-                           <label className="mb-0"><b>City</b></label>
-                           <div><i className="uil uil-location-point"></i>  {content.city}</div>
+                        <div className="col-6 col-sm-6 col-md-6 pe-0">
+                           <label className="mb-0 fs-15"><b>City</b></label>
+                           <div  className="fs-14"><i className="uil uil-location-point"></i>  {content.city}</div>
                         </div>
-                        <div className="col-md-6">
-                           <label className="mb-0"><b>State</b></label>
-                           <div>  {content.state}</div>
+                        <div className="col-6 col-sm-6 col-md-6 pe-0">
+                           <label className="mb-0 fs-15"><b>State</b></label>
+                           <div className="fs-14">  {content.state}</div>
                         </div>
                      </div>
                   </span>
-                  <span className="col-9 col-md-6 col-lg-4 text-body align-items-center">
+                  <span className="col-9  col-sm-6 col-md-3 col-lg-4 text-body align-items-center">
                      <div className="row">
-                        <div className="col-md-4">
-                           <label className="mb-0"><b>Zip Code</b></label>
-                           <div>  {content.zipCode}</div>
+                        <div className="col-md-12 ">
+                           <label className="mb-0 fs-15"><b>Zip Code</b></label>
+                           <div className="fs-14">  {content.zipCode}</div>
                         </div>
-                        {/*// <div className="col-md-5">
-                        //    <label className="mb-0"><b>Phone Number</b></label>
-                        //    <div>  {content.phoneNumber}</div>
+                        {/*// <div className="col-md-5 ">
+                        //    <label className="mb-0 fs-15"><b>Phone Number</b></label>
+                        //    <div className="fs-14">  {content.phoneNumber}</div>
                         // </div>
                         */}
                         {/*// 
@@ -392,7 +392,7 @@ return (
                <div className="card-body p-5">
                   <span className="row justify-content-between align-items-center">
                      //   
-                     <span className="col-md-3 mb-2 mb-md-0 d-flex align-items-center text-body">
+                     <span className="col-md-3 mb-2 mb-md-0 d-flex align-items-center text-body fs-15">
                         //   <img className="avatar d-inline-block w-10 me-2" alt="" src={Profile}/>
                         //     
                         <div className="row">

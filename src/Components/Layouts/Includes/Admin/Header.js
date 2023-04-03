@@ -56,8 +56,6 @@ function Close() {
 
 useEffect(()=>{
 
-
-
  let emails= localStorage.getItem("userEmail")
 
  // alert(email)
@@ -85,7 +83,7 @@ return (
 <>
 
 
-<header className="wrapper bg-soft-primary position-absolute w-100 " >
+<header className="wrapper bg-soft-primary position-absolute w-100 admin-header" >
       <nav id="navbar" className="navbar navbar-expand-lg fancy navbar-light navbar-bg-light caret-none">
         <div className="container">
           <div className="navbar-collapse-wrapper bg-white d-flex flex-row flex-nowrap w-100 justify-content-between align-items-center ">
@@ -105,7 +103,7 @@ return (
               <div className="offcanvas-body ms-lg-auto d-flex flex-column h-100">
                 <ul className="navbar-nav">
                   <li className="nav-item ">
-                    <NavLink to='/admin' className="nav-link text-black" onClick={Close}>Athletes</NavLink>
+                    <NavLink to='/admin' className="nav-link text-black " onClick={Close}>Athletes</NavLink>
                    
                   </li>
                   <li className="nav-item ">
@@ -121,8 +119,8 @@ return (
             <div className="navbar-other w-100 d-flex ms-auto">
               <ul className="navbar-nav flex-row align-items-center ms-auto">
                 <li className="nav-item">
-                    <div className="text-primary fw-bold fs-12">{email}</div>
-                    <div className="text-body text-end fw-bold">Admin</div>
+                    <div className="text-primary fw-bold fs-12 user_email">{email}</div>
+                    <div className="text-body text-end fw-bold admin-name">Admin</div>
                   {/*// <a  onClick={logoutUser} className="dropdown-item ai-icon pe-0">
                    // <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="#9a0008" stroke="#9a0008" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                    //    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>

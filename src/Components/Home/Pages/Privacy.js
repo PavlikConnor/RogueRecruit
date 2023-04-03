@@ -20,8 +20,8 @@ useEffect(() => {
               <h1 className="display-1 mb-5">Privacy Policy</h1>
               <nav className="d-inline-block" aria-label="breadcrumb">
               <ol className="breadcrumb text-black">
-                <li className="breadcrumb-item"><NavLink to='/' className='hover_color'>Home</NavLink></li>
-                <li className="breadcrumb-item active" aria-current="page">Privacy Policy</li>
+                <li className="breadcrumb-item"><NavLink to='/' className='hover_color fs-15'>Home</NavLink></li>
+                <li className="breadcrumb-item active fs-15" aria-current="page">Privacy Policy</li>
               </ol>
               </nav>
             </div>  
@@ -30,7 +30,7 @@ useEffect(() => {
       </div>
     </section>
 
-    <section className="wrapper bg-white">
+    <section className="wrapper bg-white privacy_sec">
       <div className="container pb-14 pb-md-16">
         <div className="row">
           <div className="col-lg-10 mx-auto">
@@ -38,12 +38,12 @@ useEffect(() => {
               <div className="card shadow-lg">
                 <div className="card-body">
                   <h2 className="display-2 mb-3">Privacy Policy</h2>
-                  <p>Last updated: November 21, 2021</p>
+                  <p className="fs-13">Last updated: November 21, 2021</p>
                   <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You. </p>
                   <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. </p>
                   
                   <h3 className="display-5 mb-3 mt-9">Interpretation and Definitions</h3>
-                  <h4 className="display-6 mb-4">Interpretation</h4>
+                  <h4 className="display-7 mb-4">Interpretation</h4>
                   <p>The words of which the initial letter is capitalized have meanings defined under the following conditions. The following definitions shall have the same meaning regardless of whether they appear in singular or in plural. </p>
                   <h5 className="display-7 mb-4">Definitions</h5>
                   <p>For the purposes of this Privacy Policy:</p>
@@ -91,7 +91,7 @@ useEffect(() => {
 
 
                   <h3 className="display-5 mb-3 mt-9">Collecting and Using Your Personal Data</h3>
-                  <h4 className="display-6 mb-4">Types of Data Collected</h4>
+                  <h4 className="display-7 mb-4 fw-normal">Types of Data Collected</h4>
                   <h5 className="display-7 mb-4">Personal Data</h5>
                   <p>While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to: </p>
                   
@@ -367,7 +367,7 @@ useEffect(() => {
                   accordance with their Privacy Policies.
                   </p>
 
-                  <h4 className="display-6 mb-4 ">Analytics</h4>
+                  <h4 className="display-7 mb-4 ">Analytics</h4>
                   <p>
                   We may use third-party Service providers to monitor and analyze the use of our Service.
                   </p>
@@ -416,7 +416,7 @@ useEffect(() => {
 
                 </ul>
 
-                <h4 className="display-6 mb-4 ">Advertising</h4>
+                <h4 className="display-7 mb-4 ">Advertising</h4>
                 <p>
                   We may use Service Providers to show advertisements to You to help support and maintain Our Service.
                 </p>
@@ -486,7 +486,7 @@ useEffect(() => {
                   </li>
                 </ul>
 
-                <h4 className="display-6 mb-4 ">Payments</h4>
+                <h4 className="display-7 mb-4 ">Payments</h4>
                 <p>
                   We may provide paid products and/or services within the Service. In that case, we may use
                   third-party services for payment processing (e.g. payment processors).

@@ -82,20 +82,20 @@ const Profile = () => {
    return (
       <>
          <section className="wrapper image-wrapper bg-image text-white " style={profilestyle}>
-            <div className="container pt-10 pb-15 pt-md-20  text-center">
+            <div className="container pt-10 pb-15 pt-sm-15 pt-md-20 pb-md-21 text-center">
     
             </div>
          </section>
          { Isloading ? <Loader /> :
-         <section className="wrapper bg-white detail_sec">
-            <div className="container pb-14 pb-md-16 mt-n10">
+         <section className="wrapper detail_sec">
+            <div className="container mt-0 mt-sm-n10 pb-14 pb-md-16 mt-md-n20">
                <div className="row ">
                   <div className=" col-lg-4 ">
                      <figure className="rounded">
                      <img className="avatar d-inline-block me-2" alt="" src={
                                 state.Content.athleteNavigation.profilePicture == null 
                                   ?  
-                                   (state.Content.gender=="M" ? `${AthleteMale}` :`${AthleteFemale}`
+                                   (state.Content.gender=="M" || state.Content.gender =="O"  ? `${AthleteMale}` :`${AthleteFemale}`
                                    )
                                   :
                                   state.Content.athleteNavigation.profilePicture.uri
@@ -104,98 +104,100 @@ const Profile = () => {
                      
                      </figure>
                      {/*// 
-            <div className="row">
-               //   
-               <div className="col-xl-10 mx-auto">
-                  //     
-                  <div className="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-n5 mt-lg-0 mt-lg-n30p border-radius-lg-top" style={mystyle} >
-                     //       
-                     <div className="card-body px-9">
-                        //       
-                        <h2 className="display-3 mb-3 text-white">{state.Content.firstName}</h2>
-                        //         
-                        <div className="row align-items-center counter-wrapper gy-4">
-                           //           
-                           <div className="col-6 col-lg-6">
-                              //             
-                              <p>Gender</p>
-                              //             
-                              <h3 className=" text-white">{state.Content.gender}</h3>
-                              //           
+                        <div className="row">
+                           //   
+                           <div className="col-xl-10 mx-auto">
+                              //     
+                              <div className="card image-wrapper bg-full bg-image bg-overlay bg-overlay-400 text-white mt-n5 mt-lg-0 mt-lg-n30p border-radius-lg-top" style={mystyle} >
+                                 //       
+                                 <div className="card-body px-9">
+                                    //       
+                                    <h2 className="display-3 mb-3 text-white">{state.Content.firstName}</h2>
+                                    //         
+                                    <div className="row align-items-center counter-wrapper gy-4">
+                                       //           
+                                       <div className="col-6 col-lg-6">
+                                          //             
+                                          <p>Gender</p>
+                                          //             
+                                          <h3 className=" text-white">{state.Content.gender}</h3>
+                                          //           
+                                       </div>
+                                       //           
+                                       <div className="col-6 col-lg-6">
+                                          //           
+                                          <p>Year</p>
+                                          //             
+                                          <h3 className=" text-white">{state.Content.graduationYear}</h3>
+                                          //           
+                                       </div>
+                                       //         
+                                    </div>
+                                    //       
+                                 </div>
+                                 //     
+                              </div>
+                              //   
                            </div>
-                           //           
-                           <div className="col-6 col-lg-6">
-                              //           
-                              <p>Year</p>
-                              //             
-                              <h3 className=" text-white">{state.Content.graduationYear}</h3>
-                              //           
-                           </div>
-                           //         
+                           // 
                         </div>
-                        //       
-                     </div>
-                     //     
-                  </div>
-                  //   
-               </div>
-               // 
-            </div>
-            */}
+                        */}
                      <div className="row ">
                         <div className="col-md-12 mb-4 mt-2">
-                           <h4 className="display-3 mb-1">{state.Content.firstName}{state.Content.lastName}</h4>
+                           <h4 className="display-5 mb-1">{state.Content.firstName} {state.Content.lastName}</h4>
                         </div>
                        
                         
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">Grad Year</p>
+                        <div className="col-6 col-sm-4 col-md-4 mb-2">
+                           <p className="fs-13 mb-0">Grad Year</p>
                            <h4 className="fs-16 mb-1">{state.Content.graduationYear}</h4>
                         </div>
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">School Type</p>
+                        <div className="col-6 col-sm-5 col-md-5 mb-2">
+                           <p className="fs-13 mb-0">School Type</p>
                            <h4 className="fs-16 mb-1">{state.Content.schoolType =="H" ? "High School":state.Content.schoolType =="J" ? "Junior School":"Other"}</h4>
                         </div>
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">Zip</p>
+                        <div className="col-6 col-sm-3 col-md-3 mb-2">
+                           <p className="fs-13 mb-0">Zip</p>
                            <h4 className="fs-16 mb-1">{state.Content.zipCode}</h4>
                         </div>
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">Gender</p>
+                        <div className="col-6 col-sm-4 col-md-4 mb-2">
+                           <p className="fs-13 mb-0">Gender</p>
                            <h4 className="fs-16 mb-1">{state.Content.gender =="F"?"Female":state.Content.gender =="M"?"Male":"Other"}</h4>
                         </div>
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">Height</p>
+                        <div className="col-6 col-sm-5 col-md-5 mb-2">
+                           <p className="fs-13 mb-0">Height</p>
                            <h4 className="fs-16 mb-1">{heightinfeet(state.Content.heightInches)}</h4>
                         </div>
-                        <div className="col-md-4 mb-2">
-                           <p className="fs-15 mb-0">Weight</p>
+                        <div className="col-6 col-sm-3 col-md-3 mb-2">
+                           <p className="fs-13 mb-0">Weight</p>
                            <h4 className="fs-16 mb-1">{state.Content.weightPounds} lbs</h4>
                         </div>
                         
                      </div>
-                     <Accordion className="media_accordion">
+                     <Accordion className="media_accordion" defaultActiveKey='0'>
                        <Accordion.Item eventKey="0" >
-                         <Accordion.Header className="text-primary bg-transparent media_header p-0">
-                           <span>Media Links</span>
-                            <i className="uil uil-angle-right fs-26"></i>
+                         <Accordion.Header className="text-primary bg-transparent media_header p-0 mt-4">
+                           <span className="fs-22">Media Links</span>
+                            <i className="uil uil-angle-right fs-22"></i>
                          </Accordion.Header>
                         
-                         <Accordion.Body className="p-0 border-none">
+                         <Accordion.Body className="p-0 border-none show">
+                         {mediadata.length ==0  ?
+                           <h2 className="text-center fs-18 mt-4 fw-normal">No media links available</h2> :
+                           <div className="card-wrapper">
                          {mediadata.map((data,id)=>{
                            return(
                               <div className="card mb-2 mt-4" key={id}>
                                  <div className="card-body py-2 px-2">
                                     <div className="row">
                                        <div className='col-md-10'>
-                                          <h3 className="fs-16 mb-0 ">{data.text}</h3>
+                                          <div className="fs-16 mb-0 "><b>{data.text}</b></div>
                                           <p className='mb-0 fs-12'>{data.date.split('T')[0]}</p>
                                        </div>
                                        <div className='col-md-2'>
                                           <a  href={data.url} target="_blank">
                                           <i className="uil uil-eye text-primary"></i></a>
-                                    
-                                       
+                                     
                                       </div>
                                     </div>
                                  </div>
@@ -204,6 +206,10 @@ const Profile = () => {
                          })
 
                          }
+                         </div>
+                           }
+
+
                          </Accordion.Body>
                        </Accordion.Item>
                      </Accordion>

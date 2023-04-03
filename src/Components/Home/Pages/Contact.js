@@ -58,11 +58,11 @@ const Show=(e)=>{
       <div className="container pt-17 pb-20 pt-md-19 pb-md-21 text-center">
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h1 className="display-1 mb-3 text-black">Contact Us</h1>
+            <h1 className="display-1 mb-3 ">Contact Us</h1>
             <nav className="d-inline-block" aria-label="breadcrumb">
               <ol className="breadcrumb text-black">
-                <li className="breadcrumb-item"><NavLink to='/' className='hover_color'>Home</NavLink></li>
-                <li className="breadcrumb-item active" aria-current="page">Contact</li>
+                <li className="breadcrumb-item"><NavLink to='/' className='hover_color fs-15'>Home</NavLink></li>
+                <li className="breadcrumb-item active fs-15" aria-current="page">Contact</li>
               </ol>
             </nav>
           </div>
@@ -88,8 +88,8 @@ const Show=(e)=>{
                         <div className="icon text-primary fs-28 me-4 mt-n1"> <i className="uil uil-location-pin-alt"></i> </div>
                       </div>
                       <div className="align-self-start justify-content-start">
-                        <h5 className="mb-1">Address</h5>
-                        <address> Omaha, NE USA  </address>
+                        <h5 className="mb-0 fs-18">Address</h5>
+                        <address className="fs-15"> Omaha, NE USA  </address>
                       </div>
                     </div>
                     <div className="d-flex flex-row">
@@ -97,8 +97,8 @@ const Show=(e)=>{
                         <div className="icon text-primary fs-28 me-4 mt-n1"> <i className="uil uil-envelope"></i> </div>
                       </div>
                       <div>
-                        <h5 className="mb-1">E-mail</h5>
-                        <p className="mb-0"><a href="mailto:RogueSupport@roguerecruit.com" className="text-primary text-break"><span  className="footer_email" >RogueSupport@roguerecruit.com</span></a></p>
+                        <h5 className="mb-0 fs-18">E-mail</h5>
+                        <p className="mb-0 fs-15"><a href="mailto:roguesupport@roguerecruit.com" className="text-primary text-break"><span  className="footer_email" >roguesupport@roguerecruit.com</span></a></p>
                       </div>
                     </div>
                   </div>
@@ -109,9 +109,13 @@ const Show=(e)=>{
         </div>
         <div className="row">
           <div className="col-lg-10 offset-lg-1 col-xl-8 offset-xl-2">
-            <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>
-            <p className="lead text-center mb-10">Reach out to us from our contact form and we will get back to you shortly.</p>
-            <form className="contact-form needs-validation" method="post" action="" onSubmit={formik.handleSubmit}>
+          {/*  // <h2 className="display-4 mb-3 text-center">Drop Us a Line</h2>*/}
+            <h4 className="lead text-center mb-10 form-subhead fw-bold">Reach out to us <br className=" d-block" />
+             <a href="mailto:roguesupport@roguerecruit.com" className="text-primary text-decoration-none">
+             <span className="text-primary text-break" >roguesupport@roguerecruit.com</span>
+             </a> <br className=" d-block"/>
+             and we will get back to you shortly.</h4>
+            <form className="contact-form needs-validation d-none" method="post" action="" onSubmit={formik.handleSubmit}>
               <div className="messages"></div>
               <div className="row gx-4">
                 <div className="col-md-6">

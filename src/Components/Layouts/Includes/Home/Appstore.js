@@ -34,16 +34,16 @@ const Appstore = () => {
               <div className="col-md-4"> 
                 <img src={Cloudimg1} className=" icon-svg icon-svg-sm text-green mb-3" alt="" />
                 <h4 className="mb-1">1. Download</h4>
-                <p className="mb-0">Athletes can download the app for free</p>
+                <p className="mb-0 fs-16">Athletes can download the app for free</p>
               </div>
               <div className="col-md-4"> 
                 <img src={Cloudimg2} className=" icon-svg icon-svg-sm text-red mb-3" alt="" />
                 <h4 className="mb-1">2. Create Profile</h4>
-                <p className="mb-0">Create a profile with stats, videos and more</p>
+                <p className="mb-0 fs-16">Create a profile with stats, videos and more</p>
               </div>
               <div className="col-md-4"> <img src={Cloudimg3} className=" icon-svg icon-svg-sm text-aqua mb-3" alt="" />
                 <h4 className="mb-1">3. Submit Profile</h4>
-                <p className="mb-0">Search for schools and submit for free</p>
+                <p className="mb-0 fs-16">Search for schools and submit for free</p>
               </div>
             </div>
             <div className=" justify-content-center justify-content-lg-start mt-8 btn-wrapper" data-group="download">
@@ -53,7 +53,7 @@ const Appstore = () => {
           </div>
         </div>
         <div className="row text-start text-md-center mt-14">
-          <div className="col-md-10 col-lg-12 mx-auto">
+          <div className="col-md-12 col-lg-12 mx-auto">
             <h2 className="fs-15 text-uppercase text-muted mb-3 text-primary">App Features</h2>
             <h3 className="display-4 mb-9 px-xxl-6">Discover a new era of athletic recruitment with Rogue Recruit!
              <br className="d-none d-md-block " /> 
@@ -71,7 +71,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Create athlete profile</h4>
-                <p className="mb-0">Elevate your athletic career with Rogue Recruit's cutting-edge and flexible system, designed for athletes like you. </p>
+                <p className="mb-0 fs-16">Elevate your athletic career with Rogue Recruit's cutting-edge and flexible system, designed for athletes like you. </p>
               </div>
             </div>
           </div>
@@ -82,7 +82,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Add Multiple Sports</h4>
-                <p className="mb-0">Expand your athletic horizons and showcase your versatility by adding one or multiple sports you're considering for college play with Rogue Recruit!</p>
+                <p className="mb-0 fs-16">Expand your athletic horizons and showcase your versatility by adding one or multiple sports you're considering for college play with Rogue Recruit!</p>
               </div>
             </div>
           </div>
@@ -93,7 +93,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Add Multiple Seasons/Teams</h4>
-                <p className="mb-0">Give coaches all the information they need to evaluate your potential and see why you're the perfect fit for their program.</p>
+                <p className="mb-0 fs-16">Give coaches all the information they need to evaluate your potential and see why you're the perfect fit for their program.</p>
               </div>
             </div>
           </div>
@@ -105,7 +105,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Add Stats for a Game/Season</h4>
-                <p className="mb-0">Effortlessly update your profile week to week during the season or showcase your dominance by adding a full season of stats all at once.</p>
+                <p className="mb-0 fs-16">Effortlessly update your profile week to week during the season or showcase your dominance by adding a full season of stats all at once.</p>
               </div>
             </div>
           </div>
@@ -117,7 +117,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Add Media for a Game/Season</h4>
-                <p className="mb-0">Showcase your skills with videos of your competitions and add links to articles that highlight your achievements.</p>
+                <p className="mb-0 fs-16">Showcase your skills with videos of your competitions and add links to articles that highlight your achievements.</p>
               </div>
             </div>
           </div>
@@ -128,7 +128,7 @@ const Appstore = () => {
               </div>
               <div>
                 <h4 className="mb-1">Submit Profile</h4>
-                <p className="mb-0">Search for schools you want to compete at, create a profile that showcases your skills, and submit it for free to coaches and recruiters.</p>
+                <p className="mb-0 fs-16">Search for schools you want to compete at, create a profile that showcases your skills, and submit it for free to coaches and recruiters.</p>
               </div>
             </div>
           </div>

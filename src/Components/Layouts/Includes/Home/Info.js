@@ -12,7 +12,7 @@ const Perfect = () => {
         <div className="row gx-lg-8 gx-xl-12 gy-10 align-items-center">
         <div className="col-lg-6 order-2 order-md-1">
             <h3 className="display-4 mb-3">Always a Free Experience for the Athlete </h3>
-            <p className="lead fs-lg lh-sm">To empower student-athletes and coaches by providing a comprehensive platform for talent discovery and development, fostering meaningful connections and opportunities in the athletic community. </p>
+            <p className="lead fs-19 lh-sm">To empower student-athletes and coaches by providing a comprehensive platform for talent discovery and development, fostering meaningful connections and opportunities in the athletic community. </p>
             <div className="row gy-3">
               <div className="col-xl-12">
                 <ul className="icon-list bullet-bg bullet-soft-primary mb-0 home-list">

@@ -71,7 +71,7 @@ const Login = () => {
   return (
     
     <>
-      <section className="wrapper image-wrapper bg-image  text-white" style={mystyle}>
+      <section className="wrapper image-wrapper bg-image  text-white login_bg" style={mystyle}>
         <div className="container pt-10 pt-md-15 pb-10  pb-md-18 text-center">
           <div className="row">
             <div className="col-lg-7 col-xl-6 col-xxl-5 mx-auto">

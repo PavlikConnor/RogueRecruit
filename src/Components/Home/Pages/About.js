@@ -33,11 +33,11 @@ useEffect(() => {
       <div className="container pt-17 pb-20 pt-md-19 pb-md-21 text-center" >
         <div className="row">
           <div className="col-lg-8 mx-auto">
-            <h1 className="display-1 mb-3 text-black">About</h1>
+            <h1 className="display-1 mb-3 ">About</h1>
             <nav className="d-inline-block" aria-label="breadcrumb">
               <ol className="breadcrumb text-black">
-                <li className="breadcrumb-item"><NavLink to='/' className='hover_color'>Home</NavLink></li>
-                <li className="breadcrumb-item active" aria-current="page">About Us</li>
+                <li className="breadcrumb-item"><NavLink to='/' className='hover_color fs-15'>Home</NavLink></li>
+                <li className="breadcrumb-item active fs-15" aria-current="page">About Us</li>
               </ol>
             </nav>
           </div>
@@ -51,11 +51,11 @@ useEffect(() => {
           <div className="container py-10 about_bg" style={mystyle2}>
           <div className="row gx-lg-8 gx-xl-12 gy-10 gy-lg-0">
             <div className="col-lg-12 mt-lg-2">
-              <h3 className="display-5 mb-3 fs-29">
-              <span className="fs-23 text-primary  text-center">Empower your athletic career with the trusted solutions of Rogue Recruit. </span>
+              <h3 className="display-5 mb-3 fs-25">
+              <span className="fw-normal fs-20 text-primary  text-center">Empower your athletic career with the trusted solutions of Rogue Recruit. </span>
               <br /> 
               Trusted by athletes, coaches, colleges, and universities, we are dedicated to making the recruitment process easier for all aspiring student athletes. </h3>
-              <p className="lead fs-lg mb-0 ">Transform your athletic journey with Rogue. As leaders in innovation, 
+              <p className="lead fs-15 mb-0 ">Transform your athletic journey with Rogue. As leaders in innovation, 
                 we deliver dynamic new solutions to assist athletes and coaches at all 
                 levels. Our commitment to collaborating with players and coaches 
                 ensures we tackle real problems and simplify the recruitment process. 
@@ -70,7 +70,7 @@ useEffect(() => {
     </section>
       
       <section className="bg-white">
-        <div className="position-relative container py-14 py-md-4">
+        <div className="position-relative container py-8 py-md-4">
           <div className="row mb-3">
             <div className="col-md-10 col-xl-9 col-xxl-7 mx-auto text-center">
               <img src={Aboutheadicon} className=" icon-svg icon-svg-md mb-4" alt="" />
@@ -85,10 +85,10 @@ useEffect(() => {
                   <div className="item-inner">
                     <div className="card">
                       <div className="card-body">
-                        <img className="rounded-circle w-15 mb-4" src={Aboutimg1}  alt="" />
-                        <h4 className=" d-inline-block ms-3 fs-28 align-middle">Robert <br/>
+                        <img className="rounded-circle w-13 mb-4" src={Aboutimg1}  alt="" />
+                        <h4 className=" d-inline-block ms-3 fs-22 align-middle">Robert <br/>
                         Gill</h4>
-                        <p className="mb-2">Unlock your athletic potential with the guidance of Robert at Rogue. With a 
+                        <p className="mb-2 fs-15">Unlock your athletic potential with the guidance of Robert at Rogue. With a 
                           multi-sport background in high school and a successful college football 
                           career, Robert brings a wealth of experience to the table. With over two 
                           decades delivering complex software solutions for industry giants, he knows 
@@ -104,9 +104,9 @@ useEffect(() => {
                   <div className="item-inner">
                     <div className="card">
                       <div className="card-body">
-                        <img className="rounded-circle w-15 mb-4" src={Aboutimg2} alt="" />
-                        <h4 className="d-inline-block ms-3 fs-28 align-middle">Connor <br />Pavlik</h4>
-                        <p className="mb-2">Get the competitive edge with Connor at the helm of Rogue. With a D1 
+                        <img className="rounded-circle w-13 mb-4" src={Aboutimg2} alt="" />
+                        <h4 className="d-inline-block ms-3 fs-22 align-middle">Connor <br />Pavlik</h4>
+                        <p className="mb-2 fs-15">Get the competitive edge with Connor at the helm of Rogue. With a D1 
                           recruitment background and a wealth of experience delivering valuable 
                           software for corporate America, Connor brings a unique perspective and 
                           expertise to the complex world of athletic recruitment. Trust the recruiting 
@@ -121,9 +121,9 @@ useEffect(() => {
                   <div className="item-inner">
                     <div className="card">
                       <div className="card-body">
-                        <img className="rounded-circle w-15 mb-4" src={Aboutimg3}  alt="" />
-                        <h4 className=" d-inline-block ms-3 fs-28 align-middle">Zak <br/>Keck</h4>
-                        <p className="mb-2">Unleash your athletic potential with Zak at the forefront of Rogue. With a 
+                        <img className="rounded-circle w-13 mb-4" src={Aboutimg3}  alt="" />
+                        <h4 className=" d-inline-block ms-3 fs-22 align-middle">Zak <br/>Keck</h4>
+                        <p className="mb-2 fs-15">Unleash your athletic potential with Zak at the forefront of Rogue. With a 
                             passion for delivering cutting-edge tech solutions to complex problems, Zak 
                             is dedicated to helping athletes find the right fit at the right school. With 
                             experience working with some of the most innovative companies in the US, 
@@ -139,9 +139,9 @@ useEffect(() => {
                   <div className="item-inner">
                     <div className="card">
                       <div className="card-body">
-                        <img className="rounded-circle w-15 mb-4" src={Aboutimg4} alt="" />
-                        <h4 className=" d-inline-block ms-3 fs-28 align-middle">Tariro <br/>Chinwadzimba</h4>
-                        <p className="mb-2">Take control of your athletic future with Tariro at the helm of Rogue. With a 
+                        <img className="rounded-circle w-13 mb-4" src={Aboutimg4} alt="" />
+                        <h4 className=" d-inline-block ms-3 fs-22 align-middle">Tariro <br/>Chinwadzimba</h4>
+                        <p className="mb-2 fs-15">Take control of your athletic future with Tariro at the helm of Rogue. With a 
                           multi-sport background in high school and a wealth of experience in 
                           recruiting software, Tariro is a determined leader who knows the importance 
                           of starting the recruitment process early. His drive to streamline processes 
